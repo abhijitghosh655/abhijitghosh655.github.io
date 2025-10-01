@@ -1,506 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>My Portfolio Website-Abhijit Ghosh</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
-
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemElements - Premium Chemical Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+<!-- Add this in head section -->
+<script src="js/currency-converter.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="atom-loader">
+                <div class="nucleus"></div>
+                <div class="electron-path"></div>
+                <div class="electron"></div>
             </div>
-            <div class="author-content">
-              <h4>Hi! I'm Abhijit Ghosh</h4>
-              <span>Front-End Web Developer</span>
-            </div>
-            <nav class="main-nav">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact Me</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://www.facebook.com"><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://in.linkedin.com"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>Copyright &copy; 2021 Abhijit Ghosh</p>
-            </div>
-          </div>
+            <h2>EvansChem</h2>
+            <p>Loading World of Chemicals...</p>
         </div>
-      </div>
-
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >I am an engineering student with a great passion for programming and coding.
-               I am a creative front-end developer who like making beautiful and smart things through coding.
-            </span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.jpg" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Front-End Developer</h4>
-                  <p>
-                    I can convert data to a graphical interface, through the use of HTML, CSS, and JavaScript, 
-                    so that users can view and interact with that data.
-                  </p>
-                  <div class="white-button">
-                    <a href="https://www.wikipedia.org/wiki/Front-end_web_development">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Web Designer</h4>
-                  <p>
-                    I can create and arrange the web pages that make up a website 
-                    balancing and how a page looks against its function.
-                  </p>
-                  <div class="white-button">
-                    <a href="https://en.wikipedia.org/wiki/web_design">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>What I’m good at?</h2>
-            <div class="line-dec"></div>
-            <span
-              ></span
-            >
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML5 &amp; CSS3</h4>
-                <p>
-                 HTML and CSS are two of the core technologies for building Web pages. When HTML5 and CSS3 work together, you get a powerful combination which 
-                 enables you to create feature rich websites while using a very simplified coding process. 
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
-                <p>
-                  Your website's the primary face of your brand online and its design plays a key role 
-                  in how your visitors experience the site. Incorporating smart and creative website design ideas give you a way 
-                  to stand out and provide a unique, positive experience for your visitors.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Easy Customize</h4>
-                <p>
-                  Customization lets users make their own selections about what they want to see, or set preferences for how 
-                 information is organized or displayed. It can enhance user experience because it allows user to control their interaction.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Admin Dashboard</h4>
-                <p>
-                 Admin panel of any website is like a control panel of your computer. Its a area from where you can control your website stuff, 
-                 where you can create, edit, delete or update your content which directly reflects on your website.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span
-              ></span
-            >
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="HTML5"
-                    name="isotope-filter"
-                  />
-                  <span>HTML5</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="CSS3"
-                    name="isotope-filter"
-                  />
-                  <span>CSS3</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="JavaScript"
-                    name="isotope-filter"
-                  />
-                  <span>JavaScript</span></label
-                >
-              </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="HTML5">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-01.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-01.png"
-                        data-lightbox="image-1"
-                        data-title="Inroduction to HTML5"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Introduction to HTML5</h4>
-                      <span><a href="https://en.wikipedia.org/wiki/HTML5">Learn about HTML5</a></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-              <div class="isotope-item" data-type="HTML5">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-04.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-04.jpg"
-                        data-lightbox="image-1"
-                        data-title="Course Certificate"
-                        ><i class="fa fa-search"></i>
-                     </a>
-<span>Have any interest?</span>
-<h4>
-<a href="https://coursera.org">Go to the Course>>></a></h4>
-</figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="CSS3">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-02.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-02.png"
-                        data-lightbox="image-1"
-                        data-title="Introduction to CSS3"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Introduction to CSS3</h4>
-                      <span><a href="https://en.wikipedia.org/wiki/CSS3">Learn about CSS3</a></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-               <div class="isotope-item" data-type="CSS3">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-05.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-05.jpg"
-                        data-lightbox="image-1"
-                        data-title="Course Certificate"
-                        ><i class="fa fa-search"></i
-                      ></a>
-<span>Have any interest?</span>
-<h4><a href="https://coursera.org">Go to the Course>>></a></h4>
-                    </figcaption>
-                  </figure>
-                </div>
-
-
-                <div class="isotope-item" data-type="JavaScript">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-03.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-03.png"
-                        data-lightbox="image-1"
-                        data-title="Interactivity with JavaScript"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Interactivity with JavaScript</h4>
-                      <span><a href="https://en.wikipedia.org/wiki/JavaScript">Learn about JavaScript</a></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-             <div class="isotope-item" data-type="JavaScript">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-06.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-06.jpg"
-                        data-lightbox="image-1"
-                        data-title="Course Certificate"
-                        ><i class="fa fa-search"></i></a>
-<span>Have any interest?</span>
-<h4>
-<a href="https://coursera.org">Go to the Course>>></a></h4>
-                      </figcaption>
-                  </figure>
-                </div>
-             </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact Me</h2>
-            <div class="line-dec"></div>
-<h4>
-My Address
-</h4>
-<p>----------------------</p>
-<div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721804.5258481125!2d85.60623470730309!3d24.361302255183833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa16ff1397e887%3A0x71543a3dc3e7a20a!2sWest%20Bengal!5e0!3m2!1sen!2sin!4v1624320951260!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-</div>
-<div>
-<h4>
-              Need any help? Have any project in mind? Don't worry. 
-              Fill up the followings and send message to me- 
-</h4>
-</div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" id="logo">
+                    <i class="fas fa-atom"></i>
+                    <h1>EVANS<span>CHEM</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#periodic-table" class="nav-link"><i class="fas fa-table"></i> Elements</a></li>
+                        <li><a href="#products" class="nav-link"><i class="fas fa-flask"></i> Products</a></li>
+                        <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search elements..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="user-actions">
+                        <button class="btn-login">Login</button>
+                        <button class="btn-register">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Discover the <span class="highlight">Elements</span> of Innovation</h2>
+                    <p class="hero-subtitle">Premium chemical elements and compounds for industry, research, and education</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="exploreElements">
+                            <i class="fas fa-table"></i> Explore Periodic Table
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-flask"></i> Browse Products
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-element" style="--delay: 0s;">Pt</div>
+                        <div class="floating-element" style="--delay: 1s;">Ru</div>
+                        <div class="floating-element" style="--delay: 2s;">Pd</div>
+                        <div class="floating-element" style="--delay: 3s;">Ag</div>
+                        <div class="floating-element" style="--delay: 4s;">Ni</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Periodic Table Section -->
+    <section class="section periodic-table-section" id="periodic-table">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactive Periodic Table</h2>
+                <p class="section-subtitle">Click on any element to discover its properties and available products</p>
+            </div>
+            <div class="table-controls">
+                <div class="control-group">
+                    <button class="control-btn active" data-filter="all">All Elements</button>
+                    <button class="control-btn" data-filter="metal">Metals</button>
+                    <button class="control-btn" data-filter="nonmetal">Non-Metals</button>
+                    <button class="control-btn" data-filter="noble">Noble Gases</button>
+                </div>
+                <div class="search-control">
+                    <input type="text" id="elementSearch" placeholder="Search elements...">
+                </div>
+            </div>
+            <div class="periodic-table-container">
+                <div class="periodic-table" id="periodicTable">
+                    <!-- Elements will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Chemical Products</h2>
+                <p class="section-subtitle">High-purity elements and compounds for all your needs</p>
+            </div>
+            <div class="products-container">
+                <div class="products-sidebar">
+                    <div class="filter-group">
+                        <h3>Filter by Element</h3>
+                        <div class="element-filters" id="elementFilters">
+                            <!-- Element filters will be generated -->
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Purity Level</h3>
+                        <div class="purity-filters">
+                            <label><input type="checkbox" value="99.9"> 99.9%</label>
+                            <label><input type="checkbox" value="99.99"> 99.99%</label>
+                            <label><input type="checkbox" value="99.999"> 99.999%</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main">
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here -->
+                    </div>
+                    <div class="load-more">
+                        <button class="btn btn-outline" id="loadMore">Load More Products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Element Details Modal -->
+    <div class="modal" id="elementModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalElementName">Element Details</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="element-details" id="elementDetails">
+                    <!-- Element details will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-atom"></i>
+                        <h3>EVANS CHEM INDIA PVT LTD</h3>
+                    </div>
+                    <p>Your trusted partner for premium chemical elements and compounds since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#periodic-table">Periodic Table</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 103 Liberty, Sarojini Naidu Road, Vile Parle West, Mumbai- 400056</p>
+                    <p><i class="fas fa-phone"></i> +91 9322395199</p>
+                    <p><i class="fas fa-envelope"></i> evansdarshan@gmail.com</p>
+                </div>
+            </div>
+<div style="width: 100%; max-width: 300px; margin-top: 20px;">
+  <iframe
+    src="" 
+    width="100%" 
+    height="200" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EvansChem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
-  </body>
+    <script src="js/periodic-table.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+<!-- Add this before other script tags -->
+<script src="js/currency-converter.js"></script>
+</body>
 </html>

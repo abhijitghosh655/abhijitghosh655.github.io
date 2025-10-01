@@ -1,0 +1,84 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+include_once 'db.php';
+
+$database = new Database();
+$db = $database->getConnection();
+
+$method = $_SERVER['REQUEST_METHOD'];
+
+switch($method) {
+    case 'GET':
+        getCart($db);
+        break;
+        
+    case 'POST':
+        addToCart($db);
+        break;
+        
+    case 'PUT':
+        updateCart($db);
+        break;
+        
+    case 'DELETE':
+        removeFromCart($db);
+        break;
+}
+
+function getCart($db) {
+    // In a real application, you'd get the user's cart from the database
+    // For now, we'll return a sample response
+    $cart = array(
+        array(
+            "product_id" => 1,
+            "name" => "High Purity Hydrogen Gas",
+            "price" => 45.00,
+            "quantity" => 2,
+            "image_url" => "fas fa-wind"
+        )
+    );
+    
+    echo json_encode($cart);
+}
+
+function addToCart($db) {
+    $data = json_decode(file_get_contents("php://input"));
+    
+    // In a real application, you'd add the item to the user's cart in the database
+    $response = array(
+        "success" => true,
+        "message" => "Item added to cart",
+        "item" => $data
+    );
+    
+    echo json_encode($response);
+}
+
+function updateCart($db) {
+    $data = json_decode(file_get_contents("php://input"));
+    
+    // Update cart item quantity
+    $response = array(
+        "success" => true,
+        "message" => "Cart updated successfully"
+    );
+    
+    echo json_encode($response);
+}
+
+function removeFromCart($db) {
+    $data = json_decode(file_get_contents("php://input"));
+    
+    // Remove item from cart
+    $response = array(
+        "success" => true,
+        "message" => "Item removed from cart"
+    );
+    
+    echo json_encode($response);
+}
+?>
